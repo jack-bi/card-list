@@ -1,0 +1,319 @@
+{
+  "logo": "logo.png",
+  "app": {
+    "backgroundColor": "#800000"
+  },
+  "bg": {
+    "backgroundImage": "url(/image-qp/landingPage/u_3_bg_2.png)",
+    "backgroundPosition": "center 36rem",
+    "backgroundColor": "#7d1627",
+    "backgroundRepeat": "repeat-x"
+  },
+  "ui": [
+    {
+      "type": "block",
+      "list": [
+        {
+          "src": "u_3_bg_1.jpg"
+        },
+        {
+          "src": "l_3.png",
+          "style": {
+            "width": "22%",
+            "top": "1rem",
+            "left": "2rem",
+            "position": "absolute"
+          }
+        }
+      ]
+    },
+    {
+      "type": "block",
+      "top": {
+        "style": {
+          "display": "flex",
+          "margin": "-25% auto 0",
+          "padding": "0 1rem"
+        },
+        "list": [
+          {
+            "src": "b_3_1.png",
+            "class": "h-6 btn",
+            "click": "download",
+            "style": {
+              "width": "50%",
+              "margin": "auto"
+            }
+          },
+          {
+            "src": "b_3_1_web.png",
+            "class": "h-6 btn",
+            "click": "playH5",
+            "style": {
+              "width": "50%",
+              "margin": "auto"
+            }
+          }
+        ]
+      }
+    },
+    {
+      "type": "block",
+      "class": "block-row-3",
+      "//style": {
+        "marginBottom": "1.5rem"
+      },
+      "top": {
+        "style": {
+          "width": "90%",
+          "margin": "auto",
+          "transform": "none",
+          "lineHeight": "5rem",
+          "backgroundImage": "url(/image-qp/landingPage/u_3_1.png)",
+          "backgroundSize": "cover",
+          "backgroundPosition": "center"
+        },
+        "list": [
+          {
+            "text": "热门游戏",
+            "style": {
+              "fontSize": "1.1rem",
+              "color": "#fff",
+              "fontWeight": "bold",
+              "letterSpacing": "1px"
+            }
+          }
+        ]
+      },
+      "items": {
+        "bg": {
+          "src": "u_3_2.png",
+          "style": {
+            "width": "95%"
+          },
+          "box": {
+            "style": {
+              "width": "94%",
+              "padding": "5% 3% 0"
+            }
+          }
+        },
+        "//style": {
+          "width": "95%",
+          "height": "52vw",
+          "maxHeight": "375px",
+          "backgroundImage": "url(/image-qp/landingPage/u_3_2.png)",
+          "backgroundSize": "contain",
+          "padding": "1rem 0"
+        }
+      },
+      "bottom": {
+        "style": {
+          "width": "14%",
+          "left": "0.8rem",
+          "bottom": "-10%",
+          "position": "absolute"
+        },
+        "list": [
+          {
+            "src": "u_3_3.png"
+          }
+        ]
+      },
+      "list": [
+        {
+          "src": "i_5_1.png",
+          "style": {
+            "margin": "1% 3%"
+          }
+        },
+        {
+          "src": "i_5_2.png",
+          "style": {
+            "margin": "1% 3%"
+          }
+        },
+        {
+          "src": "i_5_3.png",
+          "style": {
+            "margin": "1% 3%"
+          }
+        },
+        {
+          "src": "i_5_4.png",
+          "style": {
+            "margin": "1% 3%"
+          }
+        },
+        {
+          "src": "i_5_5.png",
+          "style": {
+            "margin": "1% 3%"
+          }
+        },
+        {
+          "src": "i_5_6.png",
+          "style": {
+            "margin": "1% 3%"
+          }
+        }
+      ]
+    },
+    {
+      "type": "block",
+      "click": "",
+      "//style": {
+        "padding": "4% 0 0 0"
+      },
+      "top":{
+        "style": {
+          "width": "90%",
+          "margin": "auto auto 3%",
+          "transform": "none",
+          "lineHeight": "5rem",
+          "backgroundImage": "url(/image-qp/landingPage/u_3_1.png)",
+          "backgroundSize": "cover",
+          "backgroundPosition": "center"
+        },
+        "list": [
+          {
+            "text": "精彩游戏截图",
+            "style": {
+              "fontSize": "1.1rem",
+              "color": "#fff",
+              "fontWeight": "bold",
+              "letterSpacing": "1px"
+            }
+          }
+        ]
+      },
+      "items": {
+        "bg": {
+          "src": "u_3_4.png",
+          "style": {
+            "width": "95%"
+          }
+        },
+        "//style": {
+          "backgroundImage": "url(/image-qp/landingPage/u_3_4.png)",
+          "backgroundSize": "cover",
+          "backgroundPosition": "center"
+        }
+      },
+      "list": [
+        {
+          "src": "i_6_1.jpg",
+          "style": {
+            "width": "62%",
+            "top": "10%",
+            "left": "10%",
+            "position": "absolute",
+            "backgroundClip": "padding-box,border-box",
+            "backgroundOrigin": "padding-box,border-box",
+            "backgroundImage": "linear-gradient(135deg,#000,#000),linear-gradient(135deg,#ff960c,#fffc1b)",
+            "border": "0.1rem transparent solid"
+          }
+        },
+        {
+          "src": "u_3_5.png",
+          "style": {
+            "width": "31%",
+            "bottom": "2%",
+            "right": "0.6%",
+            "position": "absolute"
+          }
+        }
+      ]
+    },
+    {
+      "type": "block",
+      "style": {
+        "padding": "8% 0 10% 0"
+      },
+      "items": {
+        "bg": {
+          "src": "u_3_4.png",
+          "style": {
+            "width": "95%"
+          }
+        }
+      },
+      "bottom": {
+        "list": [
+          {
+            "src": "u_3_7.png",
+            "style": {
+              "width": "14%",
+              "bottom": "-3.2%",
+              "right": "0.2%",
+              "position": "absolute"
+            }
+          }
+        ]
+      },
+      "list": [
+        {
+          "src": "i_6_2.jpg",
+          "style": {
+            "width": "62%",
+            "top": "11%",
+            "right": "7%",
+            "position": "absolute",
+            "backgroundClip": "padding-box,border-box",
+            "backgroundOrigin": "padding-box,border-box",
+            "backgroundImage": "linear-gradient(135deg,#000,#000),linear-gradient(135deg,#ff960c,#fffc1b)",
+            "border": "0.1rem transparent solid"
+          }
+        },
+        {
+          "src": "u_3_6.png",
+          "style": {
+            "width": "38%",
+            "bottom": "-14%",
+            "left": "0.2%",
+            "position": "absolute"
+          }
+        }
+      ]
+    },
+    {
+      "type": "footer",
+      "style": {
+        "backgroundColor": "#900e0e"
+      },
+      "logo": {
+        "class": "logo",
+        "style": {
+          "marginLeft": "10%"
+        }
+      },
+      "title": {
+        "style": {
+          "color": "#ffcc4b",
+          "marginLeft": "20%"
+        }
+      },
+      "desc": {
+        "text": "0秒下载，顶级手感",
+        "style": {
+          "color": "#fff",
+          "marginLeft": "20%",
+          "fontSize": "0.8rem"
+        }
+      },
+      "btn": {
+        "list": [
+          {
+            "src": "b_3_1.png",
+            "style": {
+              "marginRight": "-6%"
+            }
+          }
+        ]
+      },
+      "agent": {
+        "class": "agent"
+      }
+    }
+  ]
+}

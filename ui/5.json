@@ -1,0 +1,237 @@
+{
+  "logo": "logo.png",
+  "app": {
+    "backgroundColor": "#000"
+  },
+  "bg": {
+    "background": "#5014b2",
+    "backgroundPosition": "center bottom"
+  },
+  "ui": [{
+    "type": "block",
+    "click": "top",
+    "list": [{
+      "src": "u_5_bg_1.jpg"
+    }, {
+      "src": "l_2.png",
+      "style": {
+        "width": "35%",
+        "top": "1rem",
+        "left": "3%",
+        "position": "absolute"
+      }
+    }]
+  },
+  {
+    "type": "block",
+    "style": {
+      "backgroundImage": "url(/image-qp/landingPage/u_5_bg_2.jpg)",
+      "backgroundPosition": "center 0",
+      "paddingBottom": "25%"
+    },
+    "top": {
+      "style": {
+        "margin": "1rem auto 2rem",
+        "width": "90%"
+      },
+      "list": [
+        {
+          "src": "u_5_1.png",
+          "//text": "激情对战 超级多的游戏等你来战!",
+          "//text2": "还不赶快加入!",
+          "style": {
+            "color": "#fff",
+            "font-style": "italic",
+            "line-height": "2.5rem",
+            "font-size": "1.125rem"
+          }
+        }
+      ]
+    },
+    "list": [
+      {
+        "text": "激情对战 超级多的游戏等你来战!",
+        "style": {
+          "color": "#fff",
+          "font-style": "italic",
+          "line-height": "3rem",
+          "font-size": "1.2rem"
+        }
+      },
+      {
+        "src": "i_6_1.jpg",
+        "style": {
+          "width": "80%",
+          "margin": ".25rem auto 1rem",
+          "boxShadow": "rgba(163, 97, 195, 0.5) 0 0 6px 3px"
+        }
+      }
+    ]
+  },
+  {
+    "type": "block",
+    "top": {
+      "style": {
+        "display": "flex",
+        "margin": "-26% auto 6%",
+        "padding": "0 1.5rem"
+      },
+      "list": [
+        {
+          "src": "b_4_1.png",
+          "class": "btn",
+          "click": "download",
+          "style": {
+            "width": "45%",
+            "margin": "auto"
+          }
+        },
+        {
+          "src": "b_4_1_web.png",
+          "class": "btn",
+          "click": "playH5",
+          "style": {
+            "width": "45%",
+            "margin": "auto"
+          }
+        }
+      ]
+    }
+  },
+  {
+    "type": "block",
+    "class": "block-row-1",
+    "top": {
+      "list": [{
+        "src": "u_5_2.png",
+        "style": {
+          "position": "absolute",
+          "zIndex": "1"
+        }
+      }]
+    },
+    "items": {
+      "bg": {
+        "src": "u_5_bg_3.jpg",
+        "style": {
+          "width": "95%"
+        },
+        "box": {
+          "style": {
+            "width": "94%",
+            "padding": "8% 3% 0",
+            "color": "#fff"
+          }
+        }
+      }
+    },
+    "list": [
+      {
+        "src": "u_5_4.png",
+        "style": {
+          "width": "25%",
+          "margin": "3.5rem auto 0.5rem"
+        }
+      },
+      {
+        "text": "游戏开发、运营和维护，全部交给我们搞定!",
+        "//style": {
+          "padding": "0 0 3rem 0"
+        }
+      },
+      {
+        "src": "u_5_5.png",
+        "style": {
+          "width": "25%",
+          "margin": "1.5rem auto 0.5rem"
+        }
+      },
+      {
+        "text": "零元加盟、无需成本，代理推广即可赚钱",
+        "//style": {
+          "padding": "0 0 3rem 0"
+        }
+      }
+    ]
+  },
+  {
+    "type": "block",
+    "class": "block-row-3",
+    "top": {
+      "style": {
+        "position": "absolute",
+        "zIndex": "1"
+      },
+      "list": [
+        {
+          "src": "u_5_3.png"
+        }
+      ]
+    },
+    "items": {
+      "bg": {
+        "src": "u_5_bg_4.jpg",
+        "style": {
+          "width": "95%"
+        },
+        "box": {
+          "style": {
+            "width": "94%",
+            "padding": "18% 3% 0"
+          }
+        }
+      }
+    },
+    "list": [
+      {
+        "src": "i_8_1.png"
+      }, {
+        "src": "i_8_2.png"
+      }, {
+        "src": "i_8_3.png"
+      }, {
+        "src": "i_8_4.png"
+      }, {
+        "src": "i_8_5.png"
+      }, {
+        "src": "i_8_6.png"
+      }, {
+        "src": "i_8_7.png"
+      }, {
+        "src": "i_8_8.png"
+      }, {
+        "src": "i_8_9.png"
+      }
+    ]
+  },
+  {
+    "type": "footer",
+    "style": {
+      "background": "#3d1382",
+      "color": "#fff"
+    },
+    "logo": true,
+    "title": {
+      "text": "金 牛 棋 牌",
+      "src": "i_5_2.png"
+    },
+    "desc": {
+      "text": "0秒下载 顶级手感"
+    },
+    "btn": {
+      "list":[{
+        "src": "b_4_2.png",
+        "class": "btn animation-heartbeat",
+        "//text": "立即下载",
+        "style": {
+          "marginBottom": "-.5rem",
+          "//color":"#5c310e",
+          "//font-weight": "300",
+          "width": "",
+          "//border-radius":"1rem",
+          "//backgroundImage": "linear-gradient(90deg,#eebb3b,#f09819)"
+        }
+      }]
+    }
+  }]
+}

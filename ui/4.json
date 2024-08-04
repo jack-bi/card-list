@@ -1,0 +1,208 @@
+{
+  "logo": "logo.png",
+  "app": {
+    "backgroundColor": "rgb(13, 12, 8)"
+  },
+  "bg": {
+    "backgroundColor": "rgb(4, 4, 3)",
+    "marginTop": "-1px"
+  },
+  "ui": [{
+    "type": "block",
+    "class": "top",
+    "list": [{
+      "src": "u_4_bg_1.jpg"
+    },{
+      "src": "l_1.png",
+      "style": {
+        "width": "42%",
+        "top": "0.3rem",
+        "left": "28%",
+        "position": "absolute"
+      }
+    },{
+      "src": "",
+      "style": {
+        "width": "40%",
+        "top": "1rem",
+        "left": "30%",
+        "position": "absolute"
+      }
+    }, {
+      "src": "u_4_bg_2.png",
+      "style": {
+        "marginTop": "-1.5rem",
+        "backgroundColor": "#0e0d09"
+      }
+    }, {
+      "src": "logo.png",
+      "style": {
+        "width": "20%",
+        "left": "5%",
+        "bottom": "3%",
+        "position": "absolute"
+      }
+    }]
+  }, {
+    "type": "sitelink",
+    "class": "site-link-style-2",
+    "style": {
+      "backgroundImage": "url(/image-qp/landingPage/u_4_bg_3.jpg)"
+    },
+    "top": {
+      "style": {
+        "padding": "1.5rem 0 7rem",
+        "margin": "0 0.75rem 0 1rem",
+        "display": "flex"
+      },
+      "list": [
+        {
+          "src": "b_4.gif",
+          "class": "h-6 btn",
+          "click": "download",
+          "style": {
+            "width": "48%",
+            "margin": "auto"
+          }
+        },
+        {
+          "src": "b_4_web.gif",
+          "class": "h-6 btn ios",
+          "click": "playH5",
+          "style": {
+            "width": "48%",
+            "margin": "auto"
+          }
+        }, {
+          "src": "u_4_1.png",
+          "style": {
+            "position": "absolute",
+            "marginTop": "4.5rem"
+          }
+      }]
+    },
+    "items": {
+      "list": [{
+        "text": "站点1",
+        "link": "https://xxxxx.com",
+        "btn": {
+          "style": {},
+          "text": "点击进入",
+          "bg": "",
+          "src": ""
+        }
+      }, {
+        "text": "站点2",
+        "link": "https://xxxxx.com",
+        "btn": {
+          "style": {},
+          "text": "点击进入",
+          "bg": "",
+          "src": ""
+        }
+      }, {
+        "text": "站点3",
+        "link": "https://xxxxx.com",
+        "btn": {
+          "style": {},
+          "text": "点击进入",
+          "bg": "",
+          "src": ""
+        }
+      }]
+    }
+  }, {
+    "type": "block",
+    "class": "block-row-3",
+    "style": {
+      "backgroundImage": "url(/image-qp/landingPage/u_4_bg_4.jpg)",
+      "paddingBottom": "2rem"
+    },
+    "top": {
+      "style": {
+        "transform": "none"
+      },
+      "list": [{
+        "src": "u_4_2a.png"
+      }]
+    },
+    "list": [{
+      "src": "i_5_1.png"
+    }, {
+      "src": "i_5_2.png"
+    }, {
+      "src": "i_5_3.png"
+    }, {
+      "src": "i_5_4.png"
+    }, {
+      "src": "i_5_5.png"
+    }, {
+      "src": "i_5_6.png"
+    }, {
+      "src": "i_5_7.png"
+    }, {
+      "src": "i_5_8.png"
+    }, {
+      "src": "i_5_9.png"
+    }]
+  }, {
+    "type": "swiper",
+    "init": true,
+    "id": 286768,
+    "style": {
+      "backgroundImage": "url(/image-qp/landingPage/u_4_bg_5.jpg)",
+      "backgroundPosition": "center bottom%",
+      "paddingBottom": "9.5%"
+    },
+    "top": {
+      "list": [{
+        "src": "u_4_3.png",
+        "style": {
+          "transform": "none"
+        }
+      }]
+    },
+    "list": ["i_11_1.png", "i_11_2.png", "i_11_3.png", "i_11_4.png"],
+    "option": {
+      "effect": "fade",
+      "style": {
+        "width": "80%"
+      },
+      "//list": {
+        "style": {
+          "width": "65%"
+        }
+      }
+    }
+  }, {
+    "type": "footer",
+    "class": "logo-1-area-3 border-gradient-top-1",
+    "style": {
+      "backgroundImage": "linear-gradient(180deg, rgb(67, 67, 67), rgb(0, 0, 0))",
+      "color": "#fff"
+    },
+    "logo": {
+      "class": "logo-float-top"
+    },
+    "title": {
+      "text": "金牛棋牌",
+      "style": {
+        "color": "#fbcd59"
+      }
+    },
+    "desc": {
+      "text": "0秒下载，顶级手感"
+    },
+    "btn": {
+      "class": "btn",
+      "list": [{
+        "//click": "download",
+        "src": "b_4.gif",
+        "class": "animation-heartbeat"
+      }]
+    },
+    "agent": {
+      "class": "agent"
+    }
+  }]
+}

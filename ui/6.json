@@ -1,0 +1,217 @@
+{
+  "logo": "logo.png",
+  "app": {
+    "backgroundColor": "rgb(13, 12, 8)"
+  },
+  "bg": {
+    "backgroundImage": "url(/image-qp/landingPage/u_6_bg_2.jpg)",
+    "backgroundPosition": "center bottom",
+    "backgroundColor": "#330704"
+  },
+  "ui": [
+    {
+      "type": "block",
+      "class": "",
+      "list": [
+        {
+          "src": "u_6_bg_1.jpg"
+        }
+      ]
+    },
+    {
+      "type": "block",
+      "top": {
+        "style": {
+          "display": "flex",
+          "margin": "-23% auto -2%",
+          "padding": "0 1.5rem"
+        },
+        "list": [
+          {
+            "src": "b_6_1.png",
+            "hover": "true",
+            "class": "btn",
+            "click": "download",
+            "style": {
+              "width": "48%",
+              "margin": "auto"
+            }
+          },
+          {
+            "src": "b_6_1_web.png",
+            "hover": "true",
+            "class": "btn",
+            "click": "playH5",
+            "style": {
+              "width": "48%",
+              "margin": "auto"
+            }
+          }
+        ]
+      }
+    },
+    {
+      "type": "block",
+      "class": "block-row-3",
+      "top": {
+        "list": [
+          {
+            "text": "精选热门棋牌游戏",
+            "style": {
+              "marginTop": "4%",
+              "fontSize": "1.1rem",
+              "color": "#efb526",
+              "fontWeight": "bold",
+              "letterSpacing": "1px",
+              "marginLeft": "0.3rem"
+            }
+          }
+        ]
+      },
+      "style": {
+        "backgroundImage": "url(/image-qp/landingPage/u_6_1.png)",
+        "backgroundSize": "88%",
+        "margin": "0 auto",
+        "backgroundPosition": "center top",
+        "padding": "9.125%"
+      },
+      "items": {
+        "style": {
+          "padding-top": "3%"
+        }
+      },
+      "list": [
+        {
+          "src": "i_1_2.png",
+          "style": {
+            "width": "31%",
+            "margin": "1%"
+          }
+        },
+        {
+          "src": "i_1_1.png",
+          "style": {
+            "width": "31%",
+            "margin": "1%"
+          }
+        },
+        {
+          "src": "i_1_3.png",
+          "style": {
+            "width": "31%",
+            "margin": "1%"
+          }
+        },
+        {
+          "src": "i_1_6.png",
+          "style": {
+            "width": "31%",
+            "margin": "1%"
+          }
+        },
+        {
+          "src": "i_1_4.png",
+          "style": {
+            "width": "31%",
+            "margin": "1%"
+          }
+        },
+        {
+          "src": "i_1_9.png",
+          "style": {
+            "width": "31%",
+            "margin": "1%"
+          }
+        }
+      ]
+    },
+    {
+      "type": "block",
+      "list": [
+        {
+          "src": "u_6_2.png",
+          "style": {
+            "width": "88%",
+            "margin": "-12% auto 10%"
+          }
+        },
+        {
+          "text": "精彩游戏画面",
+          "style": {
+            "fontSize": "1.1rem",
+            "color": "#efb526",
+            "fontWeight": "bold",
+            "letterSpacing": "1px",
+            "top": "13.2%",
+            "left": "50%",
+            "marginLeft": "0.3rem",
+            "transform": "translateX(-50%)",
+            "position": "absolute"
+          }
+        },
+        {
+          "src": "i_6_6.jpg",
+          "style": {
+            "width": "75%",
+            "top": "22.5%",
+            "left": "50%",
+            "transform": "translateX(-50%)",
+            "position": "absolute"
+          }
+        },
+        {
+          "src": "i_6_3.jpg",
+          "style": {
+            "width": "75%",
+            "top": "61%",
+            "left": "50%",
+            "transform": "translateX(-50%)",
+            "position": "absolute"
+          }
+        }
+      ]
+    },
+    {
+      "type": "footer",
+      "class": "top logo-1-area-3",
+      "style": {
+          "backgroundImage": "url(/image-qp/landingPage/u_6_3.jpg)",
+          "color": "#fff"
+      },
+      "logo": {
+        "class": "logo-float-bottom"
+      },
+      "title": {
+        "text": "金牛棋牌",
+        "style": {
+          "color": "#fff"
+        }
+      },
+      "desc": {
+        "text": "0秒下载，顶级手感"
+      },
+      "star": {
+        "src": "star.png",
+        "class": "footer-info-text-star",
+        "style": {
+          "margin":"0 0 0.5rem 0",
+          "width": "4rem"
+        }
+      },
+      "btn": {
+        "class": "btn",
+        "list": [
+          {
+            "src": "b_6_2.png",
+            "hover": "true",
+            "class": "animation-heartbeat",
+            "//click": "download"
+          }
+        ]
+      },
+      "agent": {
+        "class": "agent"
+      }
+    }
+  ]
+}

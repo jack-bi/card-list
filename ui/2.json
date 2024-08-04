@@ -1,0 +1,245 @@
+{
+  "logo": "logo.png",
+  "app": {
+    "backgroundColor": "#000"
+  },
+  "bg": {
+    "backgroundImage": "linear-gradient(to right, #090818,#0B074A,#090818)",
+    "backgroundPosition": "center bottom"
+  },
+  "ui": [
+    {
+      "type": "//togglebox",
+      "class": "toggle-box-style-0",
+      "top": {
+        "list": [{
+          "src": "u_12_1.png"
+        }, {
+          "src": "u_12_2.png",
+          "style": {
+            "marginTop": "1rem"
+          }
+        }]
+      },
+      "items": {
+        "bg": {
+          "src": "u_12_3.png",
+          "style": {
+            "backgroundImage": "url(/image-qp/landingPage/u_12_3.png)"
+          }
+        }
+      },
+      "bottom": {
+        "list": [{
+          "src": "u_12_4.png",
+          "class": "",
+          "style": {
+          }
+        }]
+      }
+    },
+    {
+    "type": "block",
+    "click": "top",
+    "list": [
+      {
+      "src": "u_2_bg_1.png"
+      },
+      {
+        "src": "l_2.png",
+        "style": {
+          "width": "50%",
+          "top": "4.5rem",
+          "left": "0",
+          "position": "absolute"
+      }
+    },
+    {
+      "src": "b_2_1.gif",
+      "class": "btn",
+      "click": "download",
+      "style": {
+        "width": "90%",
+        "top": "0",
+        "right": "0",
+        "margin": "0 auto",
+        "position": "relative"
+      }
+    },
+    {
+      "src": "b_2_1_web.gif",
+      "class": "btn ios",
+      "click": "playH5",
+      "style": {
+        "width": "90%",
+        "top": "0",
+        "right": "0",
+        "margin": "0 auto",
+        "position": "relative"
+      }
+    }
+    ]
+  },
+  {
+    "type": "block",
+    "class": "block-row-3",
+    "top": {
+      "list": [{
+        "src": "u_2_1.png",
+        "class": "h-3",
+        "style": {
+          "paddingTop": "1rem",
+          "//width": "60%"
+        }
+      }]
+    },
+    "items": {
+      "bg": {
+        "src": "u_2_bg_2.jpg",
+        "style": {
+          "width": "90%"
+        },
+        "box": {
+          "style": {
+            "width": "88%",
+            "padding": "15% 6% 0"
+          }
+        }
+      }
+    },
+    "list": [
+      {
+        "src": "i_1_3.png",
+        "style": {
+          "margin": "1% 2%"
+        }
+      },
+      {
+        "src": "i_1_4.png",
+        "style": {
+          "margin": "1% 2%"
+        }
+      },
+      {
+        "src": "i_1_6.png",
+        "style": {
+          "margin": "1% 2%"
+        }
+      },
+      {
+        "src": "i_1_7.png",
+        "style": {
+          "margin": "1% 2%"
+        }
+      },
+      {
+        "src": "i_1_5.png",
+        "style": {
+          "margin": "1% 2%"
+        }
+      },
+      {
+        "src": "i_1_8.png",
+        "style": {
+          "margin": "1% 2%"
+        }
+      }
+    ]
+  },
+  {
+    "type": "swiper",
+    "init": true,
+    "list": ["i_4_1.png", "i_4_2.png", "i_4_3.png", "i_4_4.png"],
+    "style": {
+      "backgroundImage": "url(/image-qp/landingPage/u_2_bg_3.jpg)",
+      "paddingBottom": "20%"
+    },
+    "top": {
+      "list": [{
+        "src": "u_2_2.png",
+        "class": "h-3",
+        "style": {
+          "//padding": "3rem 0 1.25rem 0",
+          "padding": "1rem 0"
+        }
+      }]
+    },
+    "bottom": {
+      "list": [{
+        "src": "u_2_3.png",
+        "class": "no-click",
+        "style": {
+          "width": "25%",
+          "position": "absolute",
+          "bottom": "15%",
+          "right": "1rem",
+          "zIndex": 1
+        }
+      }]
+    },
+    "option": {
+      "//style": {
+        "width": "100%"
+      },
+      "list": {
+        "style": {
+          "width": "80%",
+          "//marginTop": "1rem"
+        }
+      },
+      "effect": "coverflow",
+      "centeredSlides": true,
+      "slidesPerView": "auto",
+      "//autoplay": false,
+      "coverflowEffect": {
+        "rotate": 0,
+        "stretch": -55,
+        "depth": 150,
+        "modifier": 1,
+        "slideShadows": false
+      },
+      "pagination": {
+        "list": ["bottom"],
+        "bulletClass": "pagination-white",
+        "bulletActiveClass": "pagination-active-goldenrod"
+      },
+      "//navigation": {
+        "next": {
+          "backgroundImage": "url(/image-qp/landingPage/a_1_r.png)"
+        },
+        "prev": {
+          "backgroundImage": "url(/image-qp/landingPage/a_1_l.png)"
+        }
+      }
+    }
+  }, {
+    "type": "footer",
+    "style": {
+      "backgroundImage": "linear-gradient(180deg,#2e6a9c,#09366f)",
+      "color": "#fff"
+    },
+    "logo": true,
+    "title": {
+      "text": "金 牛 棋 牌"
+    },
+    "desc": {
+      "text": "0秒下载 顶级手感"
+    },
+    "btn": {
+      "list": [{
+        "text": "立即下载",
+        "class": "btn animation-heartbeat",
+        "style": {
+          "margin": "0 1rem",
+          "color": "#5c310e",
+          "font-weight": "300",
+          "width": "",
+          "border-radius": "1rem",
+          "backgroundImage": "linear-gradient(90deg,#eebb3b,#f09819)",
+          "border-image": "linear-gradient(to right,#e65e01,yellow)",
+          "box-shadow": "0 4px 4px #e65e01, 0 6px 6px #3c3c3c"
+        }
+      }]
+    }
+  }]
+}

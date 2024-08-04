@@ -1,0 +1,166 @@
+{
+  "app": {
+    "backgroundColor": "#09268a"
+  },
+  "bg": {
+    "backgroundImage": "url(/image-qp/landingPage/u_1_bg_2.jpg)",
+    "backgroundPosition": "center bottom",
+    "backgroundColor": "#09268a"
+  },
+  "ui": [{
+    "type": "block",
+    "click": "top",
+    "list": [{
+      "src": "u_1_bg_1.jpg"
+    }, {
+      "src": "l_1.png",
+      "style": {
+        "width": "60%",
+        "top": "1rem",
+        "right": "0.5rem",
+        "position": "absolute"
+      }
+    }, {
+      "src": "b_1.png",
+      "hover": "true",
+      "click": "download",
+      "class": "btn",
+      "style": {
+        "width": "36%",
+        "top": "0",
+        "right": "1.5rem",
+        "marginTop": "52%",
+        "position": "absolute"
+      }
+    }, {
+      "src": "b_1_web.png",
+      "hover": "true",
+      "click": "playH5",
+      "class": "btn btn-1 ios",
+      "style": {
+        "width": "36%",
+        "top": "0",
+        "right": "1.5rem",
+        "marginTop": "66%",
+        "position": "absolute"
+      }
+    }]
+  }, {
+    "type": "sitelink",
+    "class": "site-link-style-0",
+    "items": {
+      "timerMax": 10,
+      "list": [{
+        "text": "站点一",
+        "link": "https://xxxxx.xxx.com",
+        "btn": {
+          "text": "点击进入"
+        }
+      }, {
+        "text": "站点二",
+        "link": "https://xxxxx.xxx.com",
+        "btn": {
+          "text": "点击进入"
+        }
+      }, {
+        "text": "站点三",
+        "link": "https://xxxxx.xxx.com",
+        "btn": {
+          "text": "点击进入"
+        }
+      }]
+    }
+  }, {
+    "type": "swiper",
+    "init": true,
+    "id": 376311,
+    "top": {
+      "list": [{
+        "src": "u_1_1.png",
+        "class": "h-1",
+        "style": {
+          "padding": "1rem 0",
+          "//width": "60%"
+        }
+      }]
+    },
+    "list": ["i_1_1.png", "i_1_2.png", "i_1_3.png", "i_1_4.png", "i_1_5.png"],
+    "option": {
+      "style": {
+        "width": "80%"
+      },
+      "//list": {
+        "style": {
+          "width": "170%"
+        }
+      },
+      "class": "swiper-scale",
+      "slidesPerView": "5",
+      "speed": 500,
+      "centeredSlides": true,
+      "//autoplay": false,
+      "navigation": {
+        "next": {
+          "backgroundImage": "url(/image-qp/landingPage/a_1_r.png)"
+        },
+        "prev": {
+          "backgroundImage": "url(/image-qp/landingPage/a_1_l.png)"
+        }
+      }
+    }
+  }, {
+    "type": "swiper",
+    "init": true,
+    "id": 379302,
+    "top": {
+      "list": [{
+        "src": "u_1_2.png",
+        "class": "h-1",
+        "style": {
+          "padding": "1rem 0",
+          "//width": "60%"
+        }
+      }]
+    },
+    "style": {
+      "padding": "0 0 2rem 0"
+    },
+    "list": ["i_2_1.jpg", "i_2_2.jpg", "i_2_3.jpg"],
+    "option": {
+      "style": {
+        "padding": "2.65rem 0"
+      },
+      "list": {
+        "style": {
+          "//width": "160%"
+        }
+      },
+      "class": "swiper-scale",
+      "//autoplay": false,
+      "slidesPerView": "3",
+      "speed": 500,
+      "centeredSlides": true,
+      "navigation": {
+        "next": {
+          "backgroundImage": "url(/image-qp/landingPage/a_1_r.png)"
+        },
+        "prev": {
+          "backgroundImage": "url(/image-qp/landingPage/a_1_l.png)"
+        }
+      }
+    }
+  }, {
+    "type": "block",
+    "style": {
+      "padding": "1rem 0",
+      "background": "#1d208b",
+      "color": "#74e5e9",
+      "letterSpacing": ".5rem",
+      "fontStyle": "italic",
+      "fontSize": "1.125rem"
+    },
+    "list": [{
+      "text": "棋牌游戏 尽在金牛"
+    }]
+  }]
+}

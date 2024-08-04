@@ -1,0 +1,13 @@
+//定義可操作方法，這些方法不對外開放，僅供store內容使用
+export const SET_TOAST = 'SET_TOAST'
+export const SET_IS_PW = 'SET_IS_PW'
+export const SET_ALERT = 'SET_ALERT'
+export const SET_AGENT_CODE = 'SET_AGENT_CODE'
+export const SET_SHOW_FIX_GUIDE = 'SET_SHOW_FIX_GUIDE'
+export const SET_CDN_FAST = 'SET_CDN_FAST'
+export const SET_SHOW_HINT = 'SET_SHOW_HINT'
+export const SET_MOVIE_KEY = 'SET_MOVIE_KEY'
+export const SET_IS_QP_NEW = 'SET_IS_QP_NEW'
+export const SET_SN_CONFIG = 'SET_SN_CONFIG'
+export const SET_CDN_APP_FAST = 'SET_CDN_APP_FAST'
+export const SET_PRIVATE_IP = 'SET_PRIVATE_IP'
