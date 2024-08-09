@@ -660,8 +660,7 @@ export default {
 		async doGetUI(index) {
 			let vm = this;
 			this.landingPage = {};
-			// await axios.get(`./ui/${index}.json`)
-			await axios.get(`https://mm5286.bg866.com/card/ui/${index}.json`)
+			await axios.get(`./ui/${index}.json`)
 				.then( response => {
 					const res = response.data;//vm.changeBg(response.data);
 					document.body.style.filter = 'blur(10px) brightness(0.25)';
