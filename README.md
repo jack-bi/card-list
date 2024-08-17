@@ -5,6 +5,6 @@
 
 三、手機端棋牌游戲展示廳6個，6個模版都是用 axios get api(json格式)渲染完成。
 
-四、運行cmd npm run dev --skin=qq05。
+四、頁面左上角"版型"、"關閉"，可作版型切換。
 
-五、頁面左上角"版型"、"關閉"，可作版型切換
+五、運行cmd npm run dev --skin=qq05。
