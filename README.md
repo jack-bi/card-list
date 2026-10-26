@@ -1,10 +1,38 @@
-# card-list
-一、安裝套件 "vue-awesome-swiper", "vue-router", "vuex", "axios"...
+# Card List
 
-二、畫面各功能皆拆成component 看需要再 import 使用。
+以 Vue 2 製作的手機版棋牌遊戲展示頁，內含 6 組可切換版型。頁面區塊以元件拆分，版型內容由 JSON 設定檔載入。
 
-三、手機端棋牌游戲展示廳6個，6個模版都是用 axios get api(json格式)渲染完成。
+## 環境需求
 
-四、頁面左上角"版型"、"關閉"，可作版型切換。
+- Node.js 10（專案的 Volta 設定為 `10.24.1`）
+- npm 6 以上
 
-五、運行cmd npm run dev --skin=qq05。
+## 安裝與啟動
+
+```bash
+npm install
+npm run dev --skin=qq05
+```
+
+啟動後依終端機顯示的網址開啟頁面，預設通常為 `http://localhost:8080`。
+
+## 切換版型
+
+1. 點擊頁面左上角的「選擇版型」。
+2. 在版型選單中左右滑動或拖曳，瀏覽 6 組預覽。
+3. 點一下預覽圖即可套用；目前套用中的版型會顯示「目前使用」。
+4. 如不切換，可點擊右上角的關閉按鈕或左上角的「關閉選單」。
+
+## 專案結構
+
+- `src/components/`：共用元件
+- `src/views/`：主要頁面
+- `src/skins/`：各套版型入口與設定
+- `ui/`：版型預覽圖及 JSON 設定檔
+- `image-qp/`：頁面圖片素材
+
+## 建置
+
+```bash
+npm run build --skin=qq05
+```
