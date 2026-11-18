@@ -5,7 +5,7 @@
   <meta charset=utf-8>
   <meta name=viewport content="width=device-width,initial-scale=1,maximum-scale=1,user-scalable=no">
   <title>棋牌演示廳</title>
-  <link href=./dist/240803-09/static/css/qq05.css rel=stylesheet>
+  <link href="./dist/static/css/qq05.css" rel="stylesheet">
 </head>
 
 <body>
@@ -27,10 +27,28 @@
   </script>
 <!--   <script src="https://mm3833cdn.bgbet3.com/pc/public/vendor.dll.js"></script>
   <script src=https://cdnjs.cloudflare.com/ajax/libs/jquery/1.9.1/jquery.min.js charset=utf-8></script> -->
-  <script type=text/javascript src=./dist/240803-09/static/js/manifest.js></script>
-  <script type=text/javascript src=./dist/240803-09/static/js/vendor.js></script>
-  <script type=text/javascript src=./dist/240803-09/static/js/common.js></script>
-  <script type=text/javascript src=./dist/240803-09/static/js/qq05.js></script>
+  <script type="text/javascript" src="./dist/static/js/manifest.js"></script>
+  <script type="text/javascript" src="./dist/static/js/vendor.js"></script>
+  <script type="text/javascript" src="./dist/static/js/common.js"></script>
+  <script type="text/javascript" src="./dist/static/js/qq05.js"></script>
+  <script>
+    (() => {
+      const preventCopy = (event) => event.preventDefault();
+      document.addEventListener("contextmenu", preventCopy);
+      document.addEventListener("copy", preventCopy);
+      document.addEventListener("cut", preventCopy);
+      document.addEventListener("dragstart", preventCopy);
+      document.addEventListener("keydown", (event) => {
+        const isCopyShortcut =
+          (event.ctrlKey || event.metaKey) &&
+          ["c", "x"].includes(event.key.toLowerCase());
+
+        if (isCopyShortcut) {
+          event.preventDefault();
+        }
+      });
+    })();
+  </script>
 </body>
 
 </html>

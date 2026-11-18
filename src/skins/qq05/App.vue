@@ -4,15 +4,25 @@
 			:swiper="Swiper" @click="doSetUI" @change="doSelected" ref="page" />
 		<x-wrap></x-wrap>
 		<div class="setting-btn">
-			<div class="setting-btn-ui" @click="showUI = !showUI">{{ !showUI ? '版型' : '關閉' }}</div>
+			<button type="button" class="setting-btn-ui" @click="showUI = !showUI">{{ !showUI ? '選擇版型' : '關閉總覽' }}</button>
 			<div class="setting-btn-ui hide" @click="showUI = false; showBlock = !showBlock;">調整</div>
 		</div>
-		<section v-show="showUI" class="setting-ui-box">
+		<section v-show="showUI" class="setting-ui-box" aria-label="版型總覽">
+			<header class="setting-ui-box-header">
+				<strong>6 款版型總覽</strong>
+				<span>左右滑動瀏覽，點一下預覽即可套用</span>
+			</header>
 			<div class="setting-ui-box-items">
-				<div v-for="item in uiNum" :key="`ui-${item}`">
-					<span>{{ item }}</span>
-					<img :src="`./ui/${item}.jpg`" @click="doDblclick(item)" />
-				</div>
+				<button v-for="item in uiNum" :key="`ui-${item}`"
+					type="button"
+					class="setting-ui-preview"
+					:class="{ active: selected === item }"
+					:aria-label="`套用版型 ${item}`"
+					@click="doGetUI(item)">
+					<span class="setting-ui-preview-number">版型 {{ item }}</span>
+					<img :src="`./ui/${item}.jpg`" :alt="`版型 ${item} 完整預覽`" />
+					<span class="setting-ui-preview-action">{{ selected === item ? '目前使用' : '點一下套用' }}</span>
+				</button>
 			</div>
 		</section>
 		<section v-show="showBlock" class="setting-block-box">
@@ -25,7 +35,14 @@
 const xWrap = () => import(/* webpackChunkName: "components/wrap" */'@/components/wrap')
 import common from '$COM'
 import cloneDeep from 'lodash/cloneDeep'
-import axios from 'axios'
+import ui1 from '../../../ui/1.json'
+import ui2 from '../../../ui/2.json'
+import ui3 from '../../../ui/3.json'
+import ui4 from '../../../ui/4.json'
+import ui5 from '../../../ui/5.json'
+import ui6 from '../../../ui/6.json'
+
+const uiSettings = [ui1, ui2, ui3, ui4, ui5, ui6]
 export default {
 	name: 'App',
 	components: {
@@ -34,14 +51,11 @@ export default {
 	data() {
 		return {
 			selected: 0,
-			showUI: false,
+			showUI: true,
 			showBlock: false,
 			uiNum: 6,
 			current: null,
 			currentIndex: 0,
-			delay: 700,
-			clicks: 0,
-			timer: null,
 			home: {
 				ui: [
 					{
@@ -644,40 +658,20 @@ export default {
 		}
 	},
 	methods: {
-		doDblclick(item) {
-			this.clicks++
-			if (this.clicks === 1) {
-				const self = this;
-				this.timer = setTimeout(function () {
-					self.clicks = 0;
-				}, this.delay);
-			} else {
-				clearTimeout(this.timer);
-				this.clicks = 0;
-				this.doGetUI(item);
-			}
-		},
-		async doGetUI(index) {
-			let vm = this;
-			this.landingPage = {};
-			await axios.get(`https://jack-bi.github.io/card-list/ui/${index}.json`)
-				.then( response => {
-					const res = response.data;//vm.changeBg(response.data);
-					document.body.style.filter = 'blur(10px) brightness(0.25)';
-					document.body.style.backgroundColor = '#000';
-					setTimeout(() => {
-						vm.landingPage = res;//response.data;
-						vm.showUI = false;//!vm.showUI;
-						document.body.style.filter = '';
-						document.body.classList.remove('mask');
-					}, 500);
-				})
-				.catch( error => {
-					console.log('err.res', error.response);
-					common.Util.showToast('尚未製作!')
-				})
-				.finally(function () {
-				});
+		doGetUI(index) {
+			const setting = uiSettings[index - 1]
+			if (!setting) return
+
+			document.body.style.filter = 'blur(4px) brightness(0.5)'
+			this.landingPage = cloneDeep(setting)
+			this.selected = index
+			this.showUI = false
+
+			this.$nextTick(() => {
+				document.body.style.filter = ''
+				document.body.classList.remove('mask')
+				window.scrollTo(0, 0)
+			})
 		},
 		changeBg(obj) {
 			Object.keys(obj).forEach(key => {
@@ -773,7 +767,6 @@ export default {
 		common.Util.initMain(this, true); // true 表示 是金牛
 	},
 	mounted() {
-		this.doGetUI(1);
 		this.doDrop();
 	}
 }
@@ -815,15 +808,21 @@ body {
 		@include flex(center, center, column);
 
 		&-ui {
-			width: 3rem;
-			height: 3rem;
+			height: 2.5rem;
+			padding: 0 .9rem;
 			border-radius: 10rem;
-			background: rgba(109, 109, 109, 0.8);
-			color: #eee;
-			border: .125rem solid rgba(0, 0, 0, .1);
-			font-size: 1rem;
-			transform: scale(.8);
+			background: rgba(20, 20, 24, .88);
+			color: #fff;
+			border: 1px solid rgba(255, 255, 255, .35);
+			box-shadow: 0 4px 14px rgba(0, 0, 0, .28);
+			font-size: .8rem;
+			white-space: nowrap;
 			@include flex(center, center, null);
+			&:hover,
+			&:focus {
+				background: #006cff;
+				outline: none;
+			}
 		}
 	}
 
@@ -832,66 +831,115 @@ body {
 		position: fixed;
 		overflow-y: hidden;
 		overflow-x: auto;
-		background: rgba(255, 255, 255, 0.75);
+		background: rgba(245, 247, 251, .96);
 		-webkit-overflow-scrolling: touch;
 		z-index: 19;
 		top: 0;
 		left: 0;
 
+		&-header {
+			height: 3.5rem;
+			padding: 0 7rem;
+			background: rgba(255, 255, 255, .95);
+			box-shadow: 0 1px 0 rgba(0, 0, 0, .08);
+			@include flex(center, center, column);
+			strong {
+				font-size: 1rem;
+			}
+			span {
+				margin-top: .25rem;
+				color: #596273;
+				font-size: .7rem;
+			}
+		}
+
 		&-items {
-			height: 98vh;
-			padding: 1vh 5%;
+			height: calc(100vh - 3.5rem);
+			padding: 1rem 5%;
+			box-sizing: border-box;
 			cursor: grab;
 			flex-flow: row;
-			@include flex(flex-start, flex-start, null);
+			@include flex(flex-start, center, null);
 
-			>div {
-				margin: 2%;
+			>button {
+				flex: 0 0 auto;
+				margin: 0 1rem;
+				padding: 0;
+				border: 3px solid transparent;
+				border-radius: .65rem;
+				background: #fff;
+				box-shadow: 0 5px 18px rgba(0, 0, 0, .25);
+				overflow: hidden;
 				position: relative;
-
-				// @include flex(null, center, null);
-				>span {
-					width: 2rem;
-					display: block;
-					text-align: right;
-					position: absolute;
-					top: 0;
-					left: -2.4rem;
-					color: #000;
-					font-size: .6rem;
+				cursor: pointer;
+				transition: transform .2s ease, border-color .2s ease, box-shadow .2s ease;
+				&:hover,
+				&:focus {
+					border-color: #006cff;
+					box-shadow: 0 12px 36px rgba(0, 108, 255, .28);
+					outline: none;
+					transform: translateY(-4px);
 				}
-
-				&:hover {
-					&:before {
-						width: 100%;
-						content: '點2下切換';
-						position: absolute;
-						padding: .5rem 0;
-						font-size: .5rem;
-						color: #fff;
-						box-shadow: inset #000 0 0 20px 16px;
-						cursor: pointer;
-						pointer-events: none;
-						top: 50%;
-						margin-top: -1rem;
-					}
+				&.active {
+					border-color: #16a66a;
 				}
 
 				&:last-child {
-					&:after {
-						content: '.';
-						color: rgba(0, 0, 0, 0);
-						position: absolute;
-						right: -3rem;
-					}
+					margin-right: 5rem;
 				}
 			}
 
 			img {
 				max-width: 40vw;
-				max-height: 95vh;
-				box-shadow: rgba(0, 0, 0, 0.65) 0px 5px 15px;
-				cursor: pointer;
+				max-height: calc(100vh - 6.5rem);
+			}
+		}
+	}
+
+	&-ui-preview {
+		&-number,
+		&-action {
+			position: absolute;
+			left: .65rem;
+			z-index: 1;
+			padding: .4rem .7rem;
+			border-radius: 10rem;
+			background: rgba(18, 22, 30, .88);
+			color: #fff;
+			font-size: .7rem;
+			font-weight: 700;
+			pointer-events: none;
+		}
+		&-number {
+			top: .65rem;
+		}
+		&-action {
+			left: 50%;
+			bottom: .8rem;
+			padding: .55rem 1rem;
+			background: #006cff;
+			box-shadow: 0 4px 14px rgba(0, 0, 0, .3);
+			transform: translateX(-50%);
+			white-space: nowrap;
+		}
+		&.active &-action {
+			background: #16a66a;
+		}
+	}
+
+	@media screen and (max-width: 750px) {
+		&-ui-box {
+			&-header {
+				padding: 0 5.5rem;
+				span {
+					font-size: .65rem;
+				}
+			}
+			&-items > button {
+				margin: 0 .6rem;
+			}
+			&-items img {
+				max-width: 78vw;
 			}
 		}
 	}
