@@ -8,6 +8,9 @@ import '@/icons'
 
 import '@/style/reset.css'/*引入公共样式*/
 
+// Dynamic chunks are resolved from the page URL, not from manifest.js.
+__webpack_public_path__ = window.ASSET_PATH || './'
+
 Vue.config.productionTip = false
 
 /* eslint-disable no-new */

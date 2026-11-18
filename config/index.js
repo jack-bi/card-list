@@ -44,7 +44,7 @@ module.exports = {
     assetsRoot: path.resolve(__dirname, '../dist'),
     assetsSubDirectory: 'static',
     // assetsPublicPath: 'https://mm3833cdn.bgbet3.com/qpcdn/qp-m/for-mm-lp/',
-    assetsPublicPath: '.',
+    assetsPublicPath: './',
 
     /**
      * Source Maps
